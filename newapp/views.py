@@ -10,3 +10,6 @@ def home(request):
 
 def child(request):
     return render(request,"child.html")
+
+def sam(request):
+    return render(request,"newapp/sam.html")

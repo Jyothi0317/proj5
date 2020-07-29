@@ -3,17 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        {% block title %}
-        <title>newapp base html file</title>
-        {% endblock %}
+        <title>html newapp</title>
     </head>
-    
     <body>
-        <h1>NAVBAR</h1>
-        {% block content %}
-        <h1> base.html page in newapp</h1>
-        {% endblock %}
-
+        <h1>newapp sample html page</h1>
         <h2>{{name}}</h2>
+        <a href="{% url 'newapp:child' %}">child</a>
+        <a href="{% url 'newapp:home' %}">home</a>
     </body>
 </html>
